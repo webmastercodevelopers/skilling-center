@@ -397,6 +397,7 @@
   overflow: hidden;
   position: relative;
   min-width: 0;
+  width: 100% !important;
 }
 
 #html-body .home_find__col figure {
