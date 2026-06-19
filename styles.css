@@ -1,28 +1,28 @@
 /* Hero Section */
-.home_hero {
+#html-body .home_hero {
   background-color: #f5f5f5;
   padding: 60px 0;
 }
 
-.home_hero .row-full-width-inner {
+#html-body .home_hero .row-full-width-inner {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.home_hero__cols {
+#html-body .home_hero__cols {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
 /* Text Column */
-.home_hero__text {
+#html-body .home_hero__text {
   flex: 1;
   padding: 40px;
 }
 
-.home_hero__text h2 {
+#html-body .home_hero__text h2 {
   font-family: 'Inter', sans-serif;
   font-size: 42px;
   font-weight: 700;
@@ -31,11 +31,11 @@
   color: #2d3436;
 }
 
-.home_hero__text h2:last-of-type {
+#html-body .home_hero__text h2:last-of-type {
   color: #5fb8b0;
 }
 
-.home_hero__text p {
+#html-body .home_hero__text p {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -44,13 +44,13 @@
 }
 
 /* Buttons */
-.home_hero__btn {
+#html-body .home_hero__btn {
   display: inline-flex;
   gap: 16px;
 }
 
-.home_hero__btn .pagebuilder-button-primary,
-.home_hero__btn_outline .pagebuilder-button-primary {
+#html-body .home_hero__btn .pagebuilder-button-primary,
+#html-body .home_hero__btn_outline .pagebuilder-button-primary {
   display: inline-block;
   padding: 14px 32px;
   font-family: 'Inter', sans-serif;
@@ -62,41 +62,41 @@
   transition: all 0.3s ease;
 }
 
-.home_hero__btn .pagebuilder-button-primary {
+#html-body .home_hero__btn .pagebuilder-button-primary {
   background-color: #5fb8b0;
   color: #ffffff;
   border: 2px solid #5fb8b0;
 }
 
-.home_hero__btn .pagebuilder-button-primary:hover {
+#html-body .home_hero__btn .pagebuilder-button-primary:hover {
   background-color: #4aa39c;
   border-color: #4aa39c;
 }
 
-.home_hero__btn_outline .pagebuilder-button-primary {
+#html-body .home_hero__btn_outline .pagebuilder-button-primary {
   background-color: transparent;
   color: #2d3436;
   border: 2px solid #2d3436;
 }
 
-.home_hero__btn_outline .pagebuilder-button-primary:hover {
+#html-body .home_hero__btn_outline .pagebuilder-button-primary:hover {
   background-color: #2d3436;
   color: #ffffff;
 }
 
 /* Image Column */
-.home_hero__img {
+#html-body .home_hero__img {
   flex: 1;
   position: relative;
   padding: 40px;
 }
 
-.home_hero__img figure {
+#html-body .home_hero__img figure {
   position: relative;
   margin: 0;
 }
 
-.home_hero__img img {
+#html-body .home_hero__img img {
   width: 100%;
   height: auto;
   border-radius: 16px;
@@ -106,7 +106,7 @@
 }
 
 /* Decorative Elements */
-.home_hero__img::before {
+#html-body .home_hero__img::before {
   content: '';
   position: absolute;
   top: 20px;
@@ -118,7 +118,7 @@
   z-index: 1;
 }
 
-.home_hero__img::after {
+#html-body .home_hero__img::after {
   content: '';
   position: absolute;
   bottom: 40px;
@@ -132,35 +132,35 @@
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .home_hero__cols {
+  #html-body .home_hero__cols {
     flex-direction: column;
   }
 
-  .home_hero__text {
+  #html-body .home_hero__text {
     text-align: center;
     padding: 20px;
   }
 
-  .home_hero__text h2 {
+  #html-body .home_hero__text h2 {
     font-size: 28px;
   }
 
-  .home_hero__btn {
+  #html-body .home_hero__btn {
     justify-content: center;
   }
 
-  .home_hero__img {
+  #html-body .home_hero__img {
     padding: 20px;
   }
 
-  .home_hero__img::before {
+  #html-body .home_hero__img::before {
     width: 80px;
     height: 80px;
     top: 10px;
     right: 10px;
   }
 
-  .home_hero__img::after {
+  #html-body .home_hero__img::after {
     width: 100px;
     height: 70px;
     bottom: 20px;
@@ -168,20 +168,20 @@
 }
 
 /* Mobile Hidden/Visible Classes */
-.pagebuilder-mobile-hidden {
+#html-body .pagebuilder-mobile-hidden {
   display: block;
 }
 
-.pagebuilder-mobile-only {
+#html-body .pagebuilder-mobile-only {
   display: none;
 }
 
 @media (max-width: 768px) {
-  .pagebuilder-mobile-hidden {
+  #html-body .pagebuilder-mobile-hidden {
     display: none;
   }
 
-  .pagebuilder-mobile-only {
+  #html-body .pagebuilder-mobile-only {
     display: block;
   }
 }
