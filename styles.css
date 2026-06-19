@@ -69,6 +69,7 @@
 #html-body .home_hero__btn_outline .pagebuilder-button-primary {
   display: inline-block;
   padding: 16px 36px;
+  height: auto !important;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 600;
