@@ -74,15 +74,15 @@
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  border-radius: 50px;
+  border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 #html-body .home_hero__btn .pagebuilder-button-primary {
-  background-color: #6dbdb5;
+  background-color: #008498;
   color: #ffffff;
-  border: 2px solid #6dbdb5;
+  border: 2px solid #008498;
 }
 
 #html-body .home_hero__btn .pagebuilder-button-primary span {
@@ -90,24 +90,28 @@
 }
 
 #html-body .home_hero__btn .pagebuilder-button-primary:hover {
-  background-color: #5aa8a0;
-  border-color: #5aa8a0;
+  background-color: #006d7f;
+  border-color: #006d7f;
 }
 
 #html-body .home_hero__btn_outline .pagebuilder-button-primary {
   background-color: transparent !important;
-  color: #2d3436 !important;
-  border: 2px solid #2d3436;
-  border-radius: 50px;
+  color: #00534C !important;
+  border: 2px solid #00534C;
+  border-radius: 12px;
 }
 
 #html-body .home_hero__btn_outline .pagebuilder-button-primary span {
-  color: #2d3436 !important;
+  color: #00534C !important;
 }
 
 #html-body .home_hero__btn_outline .pagebuilder-button-primary:hover {
-  background-color: #2d3436;
-  color: #ffffff;
+  background-color: #00534C;
+  color: #ffffff !important;
+}
+
+#html-body .home_hero__btn_outline .pagebuilder-button-primary:hover span {
+  color: #ffffff !important;
 }
 
 /* Image Column */
