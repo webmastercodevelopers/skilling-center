@@ -106,7 +106,7 @@
 }
 
 #html-body .home_hero__btn_outline .pagebuilder-button-primary:hover {
-  background-color: #00534C;
+  background-color: #00534C !important;
   color: #ffffff !important;
 }
 
