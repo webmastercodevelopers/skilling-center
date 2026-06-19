@@ -392,17 +392,17 @@
   display: contents !important;
 }
 
-#html-body .home_find__cards .pagebuilder-column {
+#html-body .home_find__col {
   border-radius: 16px;
   overflow: hidden;
   position: relative;
 }
 
-#html-body .home_find__cards .pagebuilder-column figure {
+#html-body .home_find__col figure {
   margin: 0;
 }
 
-#html-body .home_find__cards .pagebuilder-column img {
+#html-body .home_find__col figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -410,49 +410,92 @@
 }
 
 /* Card: Cursos (Left - spans 2 rows) */
-#html-body .home_find__cards .pagebuilder-column:first-child {
+#html-body .home_find__col:first-child {
   grid-row: 1 / 3;
   background-color: #2d8a85;
   display: flex !important;
   flex-direction: column !important;
 }
 
-#html-body .home_find__cards .pagebuilder-column:first-child figure {
+#html-body .home_find__col:first-child figure:first-child {
   height: 280px;
 }
 
-#html-body .home_find__cards .pagebuilder-column:first-child h3,
-#html-body .home_find__cards .pagebuilder-column:first-child h3[data-content-type="heading"] {
+#html-body .home_find__col:first-child figure:nth-child(2) {
+  width: 48px;
+  height: 48px;
+  margin: 20px 24px 0;
+}
+
+#html-body .home_find__col:first-child figure:nth-child(2) img {
+  width: 48px;
+  height: 48px;
+}
+
+#html-body .home_find__col:first-child .home_find__card_title {
   font-family: 'Instrument Sans', sans-serif;
   font-size: 32px;
   font-weight: 700;
   color: #ffffff;
-  margin: 0;
-  padding: 24px 24px 8px;
+  margin: 16px 24px 8px;
+  padding: 0;
 }
 
-#html-body .home_find__cards .pagebuilder-column:first-child p {
+#html-body .home_find__col:first-child .home_find__card_desc p {
   font-family: 'Satoshi', sans-serif;
   font-size: 16px;
   color: #ffffff;
-  margin: 0;
-  padding: 0 24px;
+  margin: 0 24px;
   line-height: 1.5;
 }
 
+#html-body .home_find__col:first-child .home_find__card_pill {
+  display: inline-block;
+}
+
+#html-body .home_find__col:first-child .home_find__card_pill p {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  margin: 8px 4px 8px 24px;
+}
+
+#html-body .home_find__col:first-child [data-content-type="buttons"] {
+  margin-top: auto;
+  padding: 20px 24px;
+}
+
+#html-body .home_find__col:first-child .home_find__card-cta .pagebuilder-button-primary {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
 /* Card: Image only (Top middle) */
-#html-body .home_find__cards .pagebuilder-column:nth-child(2) {
+#html-body .home_find__col:nth-child(2) {
   grid-column: 2;
   grid-row: 1;
 }
 
-#html-body .home_find__cards .pagebuilder-column:nth-child(2) figure {
+#html-body .home_find__col:nth-child(2) figure {
   height: 100%;
-  min-height: 260px;
+  min-height: 280px;
 }
 
 /* Card: Planes (Top right) */
-#html-body .home_find__cards .pagebuilder-column:nth-child(3) {
+#html-body .home_find__col:nth-child(3) {
   grid-column: 3;
   grid-row: 1;
   background-color: #1a3a5c;
@@ -461,19 +504,18 @@
   flex-direction: column !important;
 }
 
-#html-body .home_find__cards .pagebuilder-column:nth-child(3) figure {
+#html-body .home_find__col:nth-child(3) figure {
   width: 48px;
   height: 48px;
   margin-bottom: 16px;
 }
 
-#html-body .home_find__cards .pagebuilder-column:nth-child(3) figure img {
+#html-body .home_find__col:nth-child(3) figure img {
   width: 48px;
   height: 48px;
 }
 
-#html-body .home_find__cards .pagebuilder-column:nth-child(3) h3,
-#html-body .home_find__cards .pagebuilder-column:nth-child(3) h3[data-content-type="heading"] {
+#html-body .home_find__col:nth-child(3) h3[data-content-type="heading"] {
   font-family: 'Instrument Sans', sans-serif;
   font-size: 28px;
   font-weight: 700;
@@ -481,7 +523,7 @@
   margin: 0 0 12px;
 }
 
-#html-body .home_find__cards .pagebuilder-column:nth-child(3) p {
+#html-body .home_find__col:nth-child(3) p {
   font-family: 'Satoshi', sans-serif;
   font-size: 16px;
   color: #ffffff;
@@ -490,32 +532,26 @@
 }
 
 /* Card: ¿No sabes? (Bottom middle-right - spans 2 cols) */
-#html-body .home_find__cards .pagebuilder-column:nth-child(4) {
+#html-body .home_find__col:nth-child(4) {
   grid-column: 2 / 4;
   grid-row: 2;
   background-color: #e8f4f5;
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: stretch !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
 }
 
-#html-body .home_find__cards .pagebuilder-column:nth-child(4) > div {
-  flex: 1;
+#html-body .home_find__col:nth-child(4) > figure:first-child {
+  width: 48px;
+  height: 48px;
+  margin: 24px 0 16px 28px;
 }
 
-#html-body .home_find__cards .pagebuilder-column:nth-child(4) figure {
-  width: 50%;
-  min-height: 240px;
+#html-body .home_find__col:nth-child(4) > figure:first-child img {
+  width: 48px;
+  height: 48px;
 }
 
-#html-body .home_find__cards .pagebuilder-column:nth-child(4) figure img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#html-body .home_find__cards .pagebuilder-column:nth-child(4) h3,
-#html-body .home_find__cards .pagebuilder-column:nth-child(4) h3[data-content-type="heading"] {
+#html-body .home_find__col:nth-child(4) h3[data-content-type="heading"] {
   font-family: 'Instrument Sans', sans-serif;
   font-size: 28px;
   font-weight: 700;
@@ -523,7 +559,7 @@
   margin: 0 0 12px;
 }
 
-#html-body .home_find__cards .pagebuilder-column:nth-child(4) p {
+#html-body .home_find__col:nth-child(4) p {
   font-family: 'Satoshi', sans-serif;
   font-size: 16px;
   color: #1A1C20;
@@ -531,35 +567,15 @@
   line-height: 1.5;
 }
 
-/* Tags */
-#html-body .home_find__cards .pagebuilder-column .pagebuilder-column-text p span {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-family: 'Satoshi', sans-serif;
-  font-size: 13px;
-  color: #ffffff;
-  margin: 4px 4px 4px 0;
+#html-body .home_find__col:nth-child(4) > figure:last-child {
+  grid-column: 2;
+  grid-row: 1 / 5;
 }
 
-/* Link buttons with arrow */
-#html-body .home_find__cards a {
-  font-family: 'Satoshi', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: auto;
-  padding-top: 20px;
-}
-
-/* Badge */
-#html-body .home_find__cards .pagebuilder-column .pagebuilder-column-text p span.badge {
-  background-color: #1EC6BD;
-  color: #ffffff;
+#html-body .home_find__col:nth-child(4) > figure:last-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Mobile */
@@ -582,28 +598,29 @@
     grid-template-rows: auto;
   }
 
-  #html-body .home_find__cards .pagebuilder-column:first-child {
+  #html-body .home_find__col:first-child {
     grid-row: auto;
   }
 
-  #html-body .home_find__cards .pagebuilder-column:nth-child(2) {
+  #html-body .home_find__col:nth-child(2) {
     grid-column: 1;
     grid-row: auto;
   }
 
-  #html-body .home_find__cards .pagebuilder-column:nth-child(3) {
+  #html-body .home_find__col:nth-child(3) {
     grid-column: 1;
     grid-row: auto;
   }
 
-  #html-body .home_find__cards .pagebuilder-column:nth-child(4) {
+  #html-body .home_find__col:nth-child(4) {
     grid-column: 1;
     grid-row: auto;
-    flex-direction: column !important;
+    grid-template-columns: 1fr;
   }
 
-  #html-body .home_find__cards .pagebuilder-column:nth-child(4) figure {
-    width: 100%;
+  #html-body .home_find__col:nth-child(4) > figure:last-child {
+    grid-column: 1;
+    grid-row: auto;
     min-height: 200px;
   }
 }
