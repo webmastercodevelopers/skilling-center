@@ -458,10 +458,7 @@
 }
 
 #html-body .home_find__col:first-child > .home_find__card_pill {
-  display: inline-flex !important;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding: 0 24px;
+  display: contents !important;
 }
 
 #html-body .home_find__col:first-child > .home_find__card_pill p {
@@ -472,7 +469,7 @@
   font-family: 'Satoshi', sans-serif;
   font-size: 13px;
   color: #ffffff;
-  margin: 0;
+  margin: 4px 24px;
 }
 
 #html-body .home_find__col:first-child > [data-content-type="buttons"] {
