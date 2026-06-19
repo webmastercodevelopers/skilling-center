@@ -84,16 +84,24 @@
   border: 2px solid #6dbdb5;
 }
 
+#html-body .home_hero__btn .pagebuilder-button-primary span {
+  color: #ffffff !important;
+}
+
 #html-body .home_hero__btn .pagebuilder-button-primary:hover {
   background-color: #5aa8a0;
   border-color: #5aa8a0;
 }
 
 #html-body .home_hero__btn_outline .pagebuilder-button-primary {
-  background-color: transparent;
-  color: #2d3436;
+  background-color: transparent !important;
+  color: #2d3436 !important;
   border: 2px solid #2d3436;
   border-radius: 50px;
+}
+
+#html-body .home_hero__btn_outline .pagebuilder-button-primary span {
+  color: #2d3436 !important;
 }
 
 #html-body .home_hero__btn_outline .pagebuilder-button-primary:hover {
