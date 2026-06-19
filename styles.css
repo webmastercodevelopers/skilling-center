@@ -233,9 +233,9 @@
   padding: 32px 40px;
 }
 
-#html-body .pagebuilder-column-line {
+#html-body .home_keys__cols .pagebuilder-column-line {
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 
 #html-body .home_keys__col {
@@ -263,10 +263,15 @@
   height: auto;
 }
 
+#html-body .home_keys__col div[data-content-type="text"] {
+  text-align: left;
+}
+
 #html-body .home_keys__col p {
   font-family: 'Satoshi', sans-serif;
   margin: 0;
   line-height: 1.4;
+  text-align: left;
 }
 
 #html-body .home_keys__col p strong {
