@@ -464,7 +464,7 @@
 
 #html-body .home_find__col:first-child > .home_find__card_pill {
   display: block !important;
-  margin: 4px 24px;
+  margin: 4px 12px;
 }
 
 #html-body .home_find__col:first-child > .home_find__card_pill:nth-child(5) {
