@@ -245,7 +245,7 @@
   align-items: center !important;
   gap: 16px;
   padding: 0 24px;
-  border-right: 1px solid #c5e3e4;
+  border-right: 1px solid #1EC6BD;
   justify-content: flex-start !important;
 }
 
@@ -280,13 +280,13 @@
   display: block;
   font-size: 16px;
   font-weight: 700;
-  color: #00534C;
+  color: #1A1C20;
   margin-bottom: 4px;
 }
 
 #html-body .home_keys__col p:last-child {
   font-size: 14px;
-  color: #4a4a4a;
+  color: #1A1C20;
 }
 
 /* Mobile */
@@ -296,12 +296,12 @@
     gap: 24px;
   }
 
-  #html-body .home_keys__col {
-    border-right: none;
-    border-bottom: 1px solid #c5e3e4;
-    padding: 0 0 24px 0;
-    width: 100%;
-  }
+#html-body .home_keys__col {
+  border-right: none;
+  border-bottom: 1px solid #1EC6BD;
+  padding: 0 0 24px 0;
+  width: 100%;
+}
 
   #html-body .home_keys__col:last-child {
     border-bottom: none;
