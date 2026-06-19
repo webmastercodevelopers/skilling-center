@@ -239,12 +239,14 @@
 }
 
 #html-body .home_keys__col {
-  flex: 1;
-  display: flex;
-  align-items: center;
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
   gap: 16px;
   padding: 0 24px;
   border-right: 1px solid #c5e3e4;
+  justify-content: flex-start !important;
 }
 
 #html-body .home_keys__col:last-child {
