@@ -342,32 +342,36 @@
 }
 
 #html-body .home_find__head .pagebuilder-column:first-child {
-  flex: 0 0 auto !important;
-  width: auto !important;
+  flex: 0 0 40% !important;
+  width: 40% !important;
 }
 
 #html-body .home_find__head .pagebuilder-column:last-child {
   flex: 1 !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: center !important;
-  padding-top: 20px;
+  justify-content: flex-start !important;
+  padding-top: 10px;
 }
 
 #html-body .home_find__head h2 {
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 56px;
-  font-weight: 700;
+  font-size: 64px;
+  font-weight: 400;
   color: #00534C;
   margin: 0;
   line-height: 1.1;
-  white-space: nowrap;
+}
+
+#html-body .home_find__head h2 strong {
+  font-weight: 700;
+  display: block;
 }
 
 #html-body .home_find__head hr {
   border: none;
   border-top: 2px solid #1EC6BD;
-  margin: 0 0 16px 0;
+  margin: 0 0 20px 0;
   width: 100%;
 }
 
